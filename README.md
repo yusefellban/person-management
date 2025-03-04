@@ -1,15 +1,19 @@
 # Person Management API
 
-## 📌 Project Description
-This is a **Spring Boot REST API** for managing persons using PostgreSQL as the database. It supports CRUD operations (Create, Read, Update, Delete) with proper validation, exception handling, and optimized query performance.
+## 📌 Project Overview
+This project is a **RESTful API** built with **Spring Boot** for managing person records using **PostgreSQL** as the database. It supports CRUD operations (Create, Read, Update, Delete) with proper validation, exception handling, and optimized query performance.
 
-## ⚙️ Tech Stack
-- **Spring Boot 3.4.0**
-- **Spring Data JPA**
-- **Spring Boot Validation**
-- **PostgreSQL**
-- **Lombok**
-- **Maven**
+## 🎯 Key Features & Technologies Used
+- **Spring Boot 3.4.0** for rapid development.
+- **Spring Data JPA** for efficient database operations.
+- **Spring Boot Validation** for request validation.
+- **PostgreSQL** as the relational database.
+- **Lombok** to reduce boilerplate code.
+- **Maven** for dependency management.
+- **Exception Handling** to return meaningful error messages.
+- **Transaction Management** (`@Transactional`) for data integrity.
+- **Optimized Queries** using indexed search and ordered retrieval.
+- **Environment Variables** for secure database configuration.
 
 ---
 
@@ -17,13 +21,13 @@ This is a **Spring Boot REST API** for managing persons using PostgreSQL as the 
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/Person-Management-API.git
+git clone https://github.com/yusefellban/person-management.git
 cd Person-Management-API
 ```
 
 ### 2️⃣ Configure PostgreSQL Database
-Ensure that you have **PostgreSQL** installed and running.
-Update the `application.yaml` file with your database credentials:
+Ensure you have **PostgreSQL** installed and running.  
+Update `application.yaml` with your database credentials:
 ```yaml
 spring:
   datasource:
@@ -45,10 +49,10 @@ spring:
           plan_cache_max_size: 512
 ```
 ✅ **Best Practices:**
-- **Use environment variables** for database credentials instead of hardcoding them.
+- **Use environment variables** instead of hardcoding credentials.
 - **Enable SQL logging** (`show-sql: true`) for debugging.
-- **Optimize Hibernate performance** by configuring batching and caching.
-- **Use `ddl-auto: validate` in production** instead of `update` to prevent unintended schema changes.
+- **Optimize Hibernate performance** with **batching** and **caching**.
+- **Use `ddl-auto: validate` in production** instead of `update` to prevent schema modifications.
 
 ### 3️⃣ Build and Run the Application
 ```bash
@@ -128,12 +132,12 @@ Person with ID {id} has been deleted successfully.
 
 ## 🛠️ Features & Enhancements
 ✔️ CRUD operations with RESTful API
-✔️ Exception handling for invalid requests
-✔️ **@Valid** annotations for input validation
-✔️ **Lombok** for cleaner code
-✔️ Optimized database queries with indexing
-✔️ **Transactional updates** for data integrity
-✔️ Organized and maintainable structure
+✔️ Exception handling for meaningful error messages
+✔️ **@Valid** annotations for request validation
+✔️ **Lombok** for reducing boilerplate code
+✔️ Optimized database queries with **indexing and sorting**
+✔️ **Transactional updates** to maintain data integrity
+✔️ Secure and maintainable configuration with **environment variables**
 
 ---
 
@@ -141,7 +145,6 @@ Person with ID {id} has been deleted successfully.
 Feel free to fork the repository and submit a pull request! 😊
 
 ---
-
 
 ## 📬 Contact
 For any inquiries or support, reach out to me on **[LinkedIn](https://linkedin.com/in/youssef-ellban)**.
