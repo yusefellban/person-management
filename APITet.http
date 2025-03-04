@@ -1,0 +1,23 @@
+### find all runs
+GET http://localhost:8080/api/persons/all
+### find person
+GET http://localhost:8080/api/persons/1
+### add a run
+POST http://localhost:8080/api/persons/add
+Content-Type: application/json
+
+{
+
+  "name":"aaaaa",
+  "age": 10
+}
+
+### update person
+PUT http://localhost:8080/api/persons/update/2
+Content-Type: application/json
+
+{
+
+  "name":"tow",
+  "age": 8
+}
